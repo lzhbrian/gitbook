@@ -1,4 +1,4 @@
-# Image to Image Transfer
+# Style Transfer
 
 ### Resources
 
