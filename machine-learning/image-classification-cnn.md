@@ -18,6 +18,8 @@
 * SE-ResNet
 * Inception
 * ResNeXt
+* Res2Net
+* WideResNet
 * EfficientNet
 * NASNet
 * MobileNet
@@ -37,6 +39,7 @@
 ### Augmentation
 
 * AutoAugment
+* Fast AutoAugment
 * RandAugment
 * Cutout
 

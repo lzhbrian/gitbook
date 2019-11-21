@@ -31,7 +31,7 @@ description: some general deep learning techniques
 * ReLU
 * Leaky ReLU
 
-### Resources
+### Frameworks
 
 * [Tensorflow](https://www.tensorflow.org/) / [Keras](https://keras.io/)
 * [Pytorch](https://pytorch.org/) / [fastai](https://docs.fast.ai/)

@@ -8,13 +8,15 @@ description: some traditional machine learning algorithms
 
 * Linear Regression
 * Logistic Regression
-  * $$L = -\hat{y}\log y - (1 - \hat{y}) \log (1-y)$$
+  * $$y=\frac{1}{1+e^{-(ax+b)}}$$
+  * $$L(y,\hat{y}) = -\hat{y}\log y - (1 - \hat{y}) \log (1-y)$$
 * Support Vector Machine \(SVM\)
+* K Nearest Neighbor \(kNN\)
 * Decision Tree
 * Random Forest
 * Naive Bayes
-* EM
-* Linear Discrimant Analysis
+* Expectation-Maximization \(EM\)
+* Linear Discrimant Analysis \(LDA\)
 * Gradient Boosting Tree \(GBDT\)
 
 ### Semi-supervised
