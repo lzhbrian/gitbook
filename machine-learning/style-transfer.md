@@ -3,6 +3,9 @@
 ### Neural Style Transfer
 
 * AdaIN
+* Perceptual Loss
+* Total Variation Loss
+* Gram Matrix Loss
 
 ### Image to Image
 
