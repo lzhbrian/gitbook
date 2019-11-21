@@ -1,8 +1,12 @@
+---
+description: some general deep learning techniques
+---
+
 # Deep Learning
 
 ### Optimizer
 
-* Stochastic Gradient Descent
+* Stochastic Gradient Descent \(SGD\)
 * RMSProp
 * Momentum
 * Adam
@@ -21,6 +25,7 @@
 
 * Sigmoid
 * ReLU
+* Leaky ReLU
 
 
 

@@ -9,11 +9,12 @@
 * [Image Classification \(CNN\)](machine-learning/image-classification-cnn.md)
 * [Generative Adversarial Networks](machine-learning/generative-adversarial-networks.md)
 * [Style Transfer](machine-learning/style-transfer.md)
-* [Detection & Segmentation](machine-learning/detection-and-segmentation.md)
+* [Detection](machine-learning/detection.md)
+* [Semantic Segmentation](machine-learning/semantic-segmentation.md)
 
 ## Data Structure & Algorithms
 
-* [Sorting](data-structure-and-algorithms/sorting.md)
+* [Sorting Algorithms](data-structure-and-algorithms/sorting-algorithms.md)
 
 ## Programming Lang
 
