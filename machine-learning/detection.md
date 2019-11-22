@@ -6,18 +6,21 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 ### Two Stage \(Region Proposal + Roi Head\)
 
-* Faster RCNN
-* Mask RCNN
-* Feature Pyramid Network
+* Faster RCNN [\[1506.01497\]](https://arxiv.org/abs/1506.01497)
+* Mask RCNN [\[1703.06870\]](https://arxiv.org/abs/1703.06870)
+* Feature Pyramid Network [\[1612.03144\]](https://arxiv.org/abs/1612.03144)
+* Cascade RCNN [\[1712.00726\]](https://arxiv.org/abs/1712.00726)
+* Hybrid Task Cascade [\[1901.07518\]](https://arxiv.org/abs/1901.07518)
 
 ### One Stage
 
-* YOLOv1
-* YOLOv2
-* YOLOv3
-* SSD
-* CornerNet
-* CenterNet
+* YOLOv1 [\[1506.02640\]](https://arxiv.org/abs/1506.02640)
+* YOLOv2 [\[1612.08242\]](https://arxiv.org/abs/1612.08242)
+* YOLOv3 [\[1804.02767\]](https://arxiv.org/abs/1804.02767)
+* SSD [\[1512.02325\]](https://arxiv.org/abs/1512.02325)
+* CornerNet [\[1808.01244\]](https://arxiv.org/abs/1808.01244)
+* CenterNet [\[1904.08189\]](https://arxiv.org/abs/1904.08189), [\[1904.07850\]](https://arxiv.org/abs/1904.07850)
+* EfficientDet [\[1911.09070\]](https://arxiv.org/abs/1911.09070)
 
 ### Training
 

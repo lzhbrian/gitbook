@@ -10,8 +10,8 @@ description: some general deep learning techniques
 * RMSProp
 * Momentum
 * AdaGrad
-* Adam
-* RAdam
+* Adam [\[1412.6980\]](https://arxiv.org/abs/1412.6980)
+* RAdam [\[Github\]](https://github.com/LiyuanLucasLiu/RAdam) [\[1908.03265\]](https://arxiv.org/abs/1908.03265)
 
 ### Normalization
 
@@ -30,6 +30,9 @@ description: some general deep learning techniques
   * $$f(x) = \frac{1}{1+e^{-x}}$$
 * ReLU
 * Leaky ReLU
+* Tanh
+* Swish [\[1710.05941\]](https://arxiv.org/abs/1710.05941)
+* Mish [\[Github\]](https://github.com/digantamisra98/Mish) [\[1908.08681\]](https://arxiv.org/abs/1908.08681)
 
 ### Frameworks
 
