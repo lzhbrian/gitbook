@@ -21,6 +21,7 @@ description: GANs
 * Deep Convolution GAN \(DCGAN\) [\[1511.06434\]](https://arxiv.org/abs/1511.06434)
 * Progressive Growing of GANs \(PGGAN\) [\[1710.10196\]](https://arxiv.org/abs/1710.10196)
 * Self Attention GAN \(SAGAN\) [\[1805.08318\]](https://arxiv.org/abs/1805.08318)
+* BigGAN [\[1809.11096\]](https://arxiv.org/abs/1809.11096)
 * Style based Generator \(StyleGAN\) [\[1812.04948\]](https://arxiv.org/abs/1812.04948)
 * Mapping Network \(StyleGAN\) [\[1812.04948\]](https://arxiv.org/abs/1812.04948)
 
@@ -44,6 +45,7 @@ description: GANs
 * [TF-GAN](https://github.com/tensorflow/gan): TensorFlow-GAN
 * [torchgan](https://github.com/torchgan/torchgan)
 * [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN)
+* [lzhbrian/metrics](https://github.com/lzhbrian/metrics): IS, FID implementation in TF, PyTorch
 
 
 
