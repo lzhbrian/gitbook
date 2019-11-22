@@ -4,7 +4,7 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 # Detection
 
-### Two Stage \(RPN+C\)
+### Two Stage \(Region Proposal + Roi Head\)
 
 * Faster RCNN
 * Mask RCNN
