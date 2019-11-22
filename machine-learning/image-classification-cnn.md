@@ -1,3 +1,7 @@
+---
+description: image classification and convolutional neural networks
+---
+
 # Image Classification \(CNN\)
 
 ### Convolutions
