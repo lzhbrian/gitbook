@@ -52,7 +52,7 @@ description: image classification and convolutional neural networks
 ### Tricks
 
 * Mixup
-* Psuedo Labeling
+* Pseudo Labeling
 * Data Distillation
 
 ### Resources
