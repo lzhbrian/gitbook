@@ -4,30 +4,30 @@ description: image classification and convolutional neural networks
 
 # Image Classification \(CNN\)
 
-### Convolutions
+### Convolutions \([\[vdumoulin/conv\_arithmetic\]](https://github.com/vdumoulin/conv_arithmetic) [\[1603.07285\]](https://arxiv.org/abs/1603.07285)\)
 
 * Vanilla Convolution
-* Dilated Convolution
-* 1x1 Convolution
-* Transpose Convolution
-* Deformable Convolution
+* 1x1 Convolution [\[1312.4400\]](https://arxiv.org/abs/1312.4400)
+* Transpose Convolution [\[1411.4038\]](https://arxiv.org/abs/1411.4038)
+* Dilated Convolution [\[1511.07122\]](https://arxiv.org/abs/1511.07122)
+* Deformable Convolution [\[1703.06211\]](https://arxiv.org/abs/1703.06211)
 
 ### Architectures
 
 * LeNet
 * AlexNet
-* VGG
-* ResNet
-* DenseNet
-* SE-ResNet
+* VGG [\[1409.1556\]](https://arxiv.org/abs/1409.1556)
+* ResNet [\[1512.03385\]](https://arxiv.org/abs/1512.03385)
 * Inception
-* ResNeXt
-* Res2Net
-* WideResNet
-* EfficientNet
-* NASNet
-* MobileNet
-* SqueezeNet
+* SqueezeNet [\[1602.07360\]](https://arxiv.org/abs/1602.07360)
+* WideResNet [\[1605.07146\]](https://arxiv.org/abs/1605.07146)
+* DenseNet [\[1608.06993\]](https://arxiv.org/abs/1608.06993)
+* ResNeXt [\[1611.05431\]](https://arxiv.org/abs/1611.05431)
+* MobileNet [\[1704.04861](https://arxiv.org/abs/1704.04861)
+* NASNet [\[1707.07012\]](https://arxiv.org/abs/1707.07012)
+* SE-ResNet [\[1709.01507\]](https://arxiv.org/abs/1709.01507)
+* Res2Net [\[1904.01169\]](https://arxiv.org/abs/1904.01169)
+* EfficientNet [\[1905.11946\]](https://arxiv.org/abs/1905.11946)
 
 ### Loss
 
@@ -44,16 +44,16 @@ description: image classification and convolutional neural networks
 
 * Conventional
   * Random Crop, ...
-* AutoAugment
-* Fast AutoAugment
-* RandAugment
-* Cutout
+* Cutout [\[1708.04552\]](https://arxiv.org/abs/1708.04552)
+* AutoAugment [\[1805.09501\]](https://arxiv.org/abs/1805.09501)
+* Fast AutoAugment [\[1905.00397\]](https://arxiv.org/abs/1905.00397)
+* RandAugment [\[1909.13719\]](https://arxiv.org/abs/1909.13719)
 
 ### Tricks
 
-* Mixup
+* Mixup [\[1710.09412\]](https://arxiv.org/abs/1710.09412)
 * Pseudo Labeling
-* Data Distillation
+* Data Distillation [\[1712.04440\]](https://arxiv.org/abs/1712.04440)
 
 ### Resources
 
