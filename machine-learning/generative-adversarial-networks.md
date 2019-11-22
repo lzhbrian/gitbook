@@ -9,6 +9,7 @@ description: GANs
 * Vanilla GAN
 * LSGAN
 * WGAN
+* Hinge Loss
 
 ### Regularization
 
@@ -24,7 +25,7 @@ description: GANs
 
 ### Tricks
 
-* TTUR
+* Two time-scale update rule \(TTUR\)
 
 ### Conditional GANs
 
