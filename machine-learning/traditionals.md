@@ -7,6 +7,8 @@ description: some traditional machine learning algorithms
 ### Supervised
 
 * Linear Regression
+  * $$y=ax+b$$
+  * $$L(y,\hat{y}) = (y-\hat{y})^2$$
 * Logistic Regression
   * $$y=\frac{1}{1+e^{-(ax+b)}}$$
   * $$L(y,\hat{y}) = -\hat{y}\log y - (1 - \hat{y}) \log (1-y)$$

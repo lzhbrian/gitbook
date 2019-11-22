@@ -42,6 +42,8 @@ description: image classification and convolutional neural networks
 
 ### Augmentation
 
+* Conventional
+  * Random Crop, ...
 * AutoAugment
 * Fast AutoAugment
 * RandAugment

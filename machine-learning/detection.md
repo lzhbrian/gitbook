@@ -12,8 +12,12 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 ### One Stage
 
-* YOLO
+* YOLOv1
+* YOLOv2
+* YOLOv3
 * SSD
+* CornerNet
+* CenterNet
 
 ### Training
 
@@ -33,6 +37,6 @@ description: 'detection (including semantic, panoptic segmentation)'
 * [amusi/awesome-object-detection](https://github.com/amusi/awesome-object-detection)
 * [torchvision - object detection](https://pytorch.org/docs/stable/torchvision/models.html#object-detection-instance-segmentation-and-person-keypoint-detection): official pytorch toolkit for vision
 * [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection): a marvellous open sourced lib with nearly all SOTA models
-* [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2): detectron implemented in pytorch by Facebooko
-* [TuSimple/simpledet](https://github.com/TuSimple/simpledet): detection Lib by TuSimple
+* [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2): detectron implemented in pytorch by Facebook
+* [TuSimple/simpledet](https://github.com/TuSimple/simpledet): detection lib by TuSimple
 
