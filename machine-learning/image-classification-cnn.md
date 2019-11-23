@@ -6,7 +6,14 @@ description: image classification and convolutional neural networks
 
 ## Survey Papers
 
+* 
+## Resources
 
+* [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
+* [torchvision](https://pytorch.org/docs/stable/torchvision/index.html): official pytorch toolkit for vision
+* [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch): lots of pretrained models in pytorch
+* [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations): lots of augmentation implementations
+* [aleju/imgaug](https://github.com/aleju/imgaug): lots of augmentation implementations
 
 ## Models
 
@@ -62,14 +69,6 @@ description: image classification and convolutional neural networks
 * Vanilla Image Classification
 * Few-shot Image Classification
 * Zero-shot Image Classification
-
-## Resources
-
-* [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
-* [torchvision](https://pytorch.org/docs/stable/torchvision/index.html): official pytorch toolkit for vision
-* [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch): lots of pretrained models in pytorch
-* [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations): lots of augmentation implementations
-* [aleju/imgaug](https://github.com/aleju/imgaug): lots of augmentation implementations
 
 
 

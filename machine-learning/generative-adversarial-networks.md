@@ -4,6 +4,20 @@ description: GANs
 
 # Generative Adversarial Networks
 
+## Survey Papers
+
+* Are GANs Created Equal? A Large-Scale Study [\[1711.10337\]](https://arxiv.org/abs/1711.10337)
+* A Large-Scale Study on Regularization and Normalization in GANs [\[1807.04720\]](https://arxiv.org/abs/1807.04720)
+
+## Resources
+
+* [google/compare\_gan](https://github.com/google/compare_gan)
+* [hindupuravinash/the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo)
+* [TF-GAN](https://github.com/tensorflow/gan): TensorFlow-GAN
+* [torchgan](https://github.com/torchgan/torchgan)
+* [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN)
+* [lzhbrian/metrics](https://github.com/lzhbrian/metrics): IS, FID implementation in TF, PyTorch
+
 ## Models
 
 ### Loss functions
@@ -42,14 +56,6 @@ description: GANs
 
 * Inception Score
 * FID Score
-
-## Resources
-
-* [Are GANs Created Equal? A Large-Scale Study](https://arxiv.org/abs/1711.10337): a great survey on GAN
-* [TF-GAN](https://github.com/tensorflow/gan): TensorFlow-GAN
-* [torchgan](https://github.com/torchgan/torchgan)
-* [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN)
-* [lzhbrian/metrics](https://github.com/lzhbrian/metrics): IS, FID implementation in TF, PyTorch
 
 
 

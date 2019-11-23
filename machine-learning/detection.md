@@ -11,6 +11,15 @@ description: 'detection (including semantic, panoptic segmentation)'
 * Object Detection in 20 Years: A Survey [\[1905.05055\]](https://arxiv.org/abs/1905.05055)
 * A Survey of Deep Learning-Based Object Detection [\[1907.09408\]](https://arxiv.org/abs/1907.09408)
 
+## Resources
+
+* [hoya012/deep\_learning\_object\_detection](https://github.com/hoya012/deep_learning_object_detection)
+* [amusi/awesome-object-detection](https://github.com/amusi/awesome-object-detection)
+* [torchvision - object detection](https://pytorch.org/docs/stable/torchvision/models.html#object-detection-instance-segmentation-and-person-keypoint-detection): official pytorch toolkit for vision
+* [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection): a marvellous open sourced lib with nearly all SOTA models
+* [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2): detectron implemented in pytorch by Facebook
+* [TuSimple/simpledet](https://github.com/TuSimple/simpledet): detection lib by TuSimple
+
 ## Models
 
 ### Two Stage \(Region Proposal + ROI Head\)
@@ -48,15 +57,6 @@ description: 'detection (including semantic, panoptic segmentation)'
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/)
 * [COCO](http://cocodataset.org/)
 * [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html)
-
-## Resources
-
-* [hoya012/deep\_learning\_object\_detection](https://github.com/hoya012/deep_learning_object_detection)
-* [amusi/awesome-object-detection](https://github.com/amusi/awesome-object-detection)
-* [torchvision - object detection](https://pytorch.org/docs/stable/torchvision/models.html#object-detection-instance-segmentation-and-person-keypoint-detection): official pytorch toolkit for vision
-* [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection): a marvellous open sourced lib with nearly all SOTA models
-* [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2): detectron implemented in pytorch by Facebook
-* [TuSimple/simpledet](https://github.com/TuSimple/simpledet): detection lib by TuSimple
 
 
 
