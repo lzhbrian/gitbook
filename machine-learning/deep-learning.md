@@ -4,6 +4,8 @@ description: some general deep learning techniques
 
 # Deep Learning
 
+## Models
+
 ### Optimizer
 
 * Stochastic Gradient Descent \(SGD\)
@@ -34,7 +36,7 @@ description: some general deep learning techniques
 * Swish [\[1710.05941\]](https://arxiv.org/abs/1710.05941)
 * Mish [\[digantamisra98/Mish\]](https://github.com/digantamisra98/Mish) [\[1908.08681\]](https://arxiv.org/abs/1908.08681)
 
-### Frameworks
+## Frameworks
 
 * [TensorFlow](https://www.tensorflow.org/) / [Keras](https://keras.io/)
 * [PyTorch](https://pytorch.org/) / [fastai](https://docs.fast.ai/)

@@ -4,6 +4,8 @@ description: GANs
 
 # Generative Adversarial Networks
 
+## Models
+
 ### Loss functions
 
 * Vanilla GAN [\[1406.2661\]](https://arxiv.org/abs/1406.2661)
@@ -25,21 +27,23 @@ description: GANs
 * Style based Generator \(StyleGAN\) [\[1812.04948\]](https://arxiv.org/abs/1812.04948)
 * Mapping Network \(StyleGAN\) [\[1812.04948\]](https://arxiv.org/abs/1812.04948)
 
-### Tricks
-
-* Two time-scale update rule \(TTUR\) [\[bioinf-jku/TTUR\]](https://github.com/bioinf-jku/TTUR) [\[1706.08500\]](https://arxiv.org/abs/1706.08500)
-
 ### Conditional GANs
 
 * Vanilla Conditional GANs [\[1411.1784\]](https://arxiv.org/abs/1411.1784)
 * Auxiliary Classifer GAN \(ACGAN\) [\[1610.09585\]](https://arxiv.org/abs/1610.09585)
+
+## Others
+
+### Tricks
+
+* Two time-scale update rule \(TTUR\) [\[bioinf-jku/TTUR\]](https://github.com/bioinf-jku/TTUR) [\[1706.08500\]](https://arxiv.org/abs/1706.08500)
 
 ### Metrics
 
 * Inception Score
 * FID Score
 
-### Resources
+## Resources
 
 * [Are GANs Created Equal? A Large-Scale Study](https://arxiv.org/abs/1711.10337): a great survey on GAN
 * [TF-GAN](https://github.com/tensorflow/gan): TensorFlow-GAN

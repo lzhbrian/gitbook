@@ -4,6 +4,12 @@ description: image classification and convolutional neural networks
 
 # Image Classification \(CNN\)
 
+## Survey Papers
+
+
+
+## Models
+
 ### Convolutions \([\[vdumoulin/conv\_arithmetic\]](https://github.com/vdumoulin/conv_arithmetic) [\[1603.07285\]](https://arxiv.org/abs/1603.07285)\)
 
 * Vanilla Convolution
@@ -34,12 +40,6 @@ description: image classification and convolutional neural networks
 * Cross Entropy Loss
 * Focal Loss
 
-### Task
-
-* Vanilla Image Classification
-* Few-shot Image Classification
-* Zero-shot Image Classification
-
 ### Augmentation
 
 * Conventional
@@ -49,14 +49,23 @@ description: image classification and convolutional neural networks
 * Fast AutoAugment [\[1905.00397\]](https://arxiv.org/abs/1905.00397)
 * RandAugment [\[1909.13719\]](https://arxiv.org/abs/1909.13719)
 
+## Others
+
 ### Tricks
 
 * Mixup [\[1710.09412\]](https://arxiv.org/abs/1710.09412)
 * Pseudo Labeling
 * Data Distillation [\[1712.04440\]](https://arxiv.org/abs/1712.04440)
 
-### Resources
+### Task
 
+* Vanilla Image Classification
+* Few-shot Image Classification
+* Zero-shot Image Classification
+
+## Resources
+
+* [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
 * [torchvision](https://pytorch.org/docs/stable/torchvision/index.html): official pytorch toolkit for vision
 * [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch): lots of pretrained models in pytorch
 * [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations): lots of augmentation implementations

@@ -4,6 +4,8 @@ description: some traditional machine learning algorithms
 
 # Traditionals
 
+## Tasks
+
 ### Supervised
 
 * Linear Regression
@@ -31,6 +33,8 @@ description: some traditional machine learning algorithms
   * K-means
   * Mean-shift
 * PCA
+
+## Others
 
 ### Ensemble
 

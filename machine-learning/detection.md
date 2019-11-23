@@ -4,8 +4,9 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 # Detection
 
-## Survey papers
+## Survey Papers
 
+* Object Detection with Deep Learning: A Review [\[1807.05511\]](https://arxiv.org/abs/1807.05511)
 * Deep Learning for Generic Object Detection: A Survey [\[1809.02165\]](https://arxiv.org/abs/1809.02165)
 * Object Detection in 20 Years: A Survey [\[1905.05055\]](https://arxiv.org/abs/1905.05055)
 * A Survey of Deep Learning-Based Object Detection [\[1907.09408\]](https://arxiv.org/abs/1907.09408)
@@ -32,7 +33,9 @@ description: 'detection (including semantic, panoptic segmentation)'
 * CenterNet [\[1904.08189\]](https://arxiv.org/abs/1904.08189)
 * EfficientDet [\[1911.09070\]](https://arxiv.org/abs/1911.09070)
 
-## Training
+## Others
+
+### Training
 
 * Online Hard Example Mining \(OHEM\)
 
@@ -40,7 +43,7 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 * Mean Average Precision \(mAP\)
 
-## Datasets
+### Datasets
 
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/)
 * [COCO](http://cocodataset.org/)

@@ -4,12 +4,12 @@ description: sementic segmentation
 
 # Semantic Segmentation
 
-### Models
+## Models
 
 * FCN
 * DeepLab
 
-### Post Processing
+## Post Processing
 
 * Conditional Random Field \(CRF\)
 
