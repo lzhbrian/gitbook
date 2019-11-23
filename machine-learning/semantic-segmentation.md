@@ -6,7 +6,8 @@ description: sementic segmentation
 
 ## Survey Papers
 
-* 
+* A Review on Deep Learning Techniques Applied to Semantic Segmentation [\[1704.06857\]](https://arxiv.org/abs/1704.06857)
+
 ## Resources
 
 * [torchvision - semantic segmentation](https://pytorch.org/docs/stable/torchvision/models.html#semantic-segmentation)
