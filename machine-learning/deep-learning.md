@@ -6,7 +6,8 @@ description: some general deep learning techniques
 
 ## Survey Papers
 
-* 
+* The History Began from AlexNet: A Comprehensive Survey on Deep Learning Approaches [\[1803.01164\]](https://arxiv.org/abs/1803.01164)
+
 ## Resources
 
 ### Frameworks

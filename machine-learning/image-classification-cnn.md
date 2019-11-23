@@ -6,7 +6,8 @@ description: image classification and convolutional neural networks
 
 ## Survey Papers
 
-* 
+* Recent Advances in Convolutional Neural Networks [\[1512.07108\]](https://arxiv.org/abs/1512.07108)
+
 ## Resources
 
 * [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
