@@ -1,18 +1,18 @@
 ---
-description: GANs
+description: GANs (mainly in image synthesis)
 ---
 
 # Generative Adversarial Networks
 
-## Survey Papers
+## Survey Papers / Repos
 
 * Are GANs Created Equal? A Large-Scale Study [\[1711.10337\]](https://arxiv.org/abs/1711.10337)
 * A Large-Scale Study on Regularization and Normalization in GANs [\[1807.04720\]](https://arxiv.org/abs/1807.04720)
+* [hindupuravinash/the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo)
 
 ## Resources
 
 * [google/compare\_gan](https://github.com/google/compare_gan)
-* [hindupuravinash/the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo)
 * [TF-GAN](https://github.com/tensorflow/gan): TensorFlow-GAN
 * [torchgan](https://github.com/torchgan/torchgan)
 * [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN)
@@ -54,8 +54,8 @@ description: GANs
 
 ### Metrics
 
-* Inception Score
-* FID Score
+* Inception Score [\[1606.03498\]](https://arxiv.org/abs/1606.03498) [\[1801.01973\]](https://arxiv.org/abs/1801.01973)
+* FID Score [\[1706.08500\]](https://arxiv.org/abs/1706.08500)
 
 
 

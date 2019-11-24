@@ -4,9 +4,14 @@ description: some traditional machine learning algorithms
 
 # Traditionals
 
-## Survey Papers
+## Survey Papers / Repos
 
-* 
+* [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
+
+## Resources
+
+* [Coursera Machine Learning](https://www.coursera.org/learn/machine-learning) by Andrew Ng
+
 ## Tasks
 
 ### Supervised

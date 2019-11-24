@@ -4,11 +4,15 @@ description: some general deep learning techniques
 
 # Deep Learning
 
-## Survey Papers
+## Survey Papers / Books
 
 * Deep Learning Book [\[deeplearningbook.org\]](https://www.deeplearningbook.org/)
 
 ## Resources
+
+### Courses
+
+* [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) by Andrew Ng
 
 ### Frameworks
 

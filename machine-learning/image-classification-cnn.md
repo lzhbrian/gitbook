@@ -4,13 +4,13 @@ description: image classification and convolutional neural networks
 
 # Image Classification \(CNN\)
 
-## Survey Papers
+## Survey Papers / Repos
 
 * Recent Advances in Convolutional Neural Networks [\[1512.07108\]](https://arxiv.org/abs/1512.07108)
+* [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
 
 ## Resources
 
-* [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
 * [torchvision](https://pytorch.org/docs/stable/torchvision/index.html): official pytorch toolkit for vision
 * [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch): lots of pretrained models in pytorch
 * [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations): lots of augmentation implementations

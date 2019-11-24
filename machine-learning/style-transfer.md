@@ -1,13 +1,9 @@
 # Style Transfer
 
-## Survey Papers
+## Survey Papers / Repos
 
-* Neural Style Transfer: A Review [\[1705.04058\]](https://arxiv.org/abs/1705.04058)
-
-## Resources
-
+* Neural Style Transfer: A Review [\[ycjing/Neural-Style-Transfer-Papers\]](https://github.com/ycjing/Neural-Style-Transfer-Papers) [\[1705.04058\]](https://arxiv.org/abs/1705.04058)
 * [lzhbrian/image-to-image-papers](https://github.com/lzhbrian/image-to-image-papers)
-* [ycjing/Neural-Style-Transfer-Papers](https://github.com/ycjing/Neural-Style-Transfer-Papers)
 * [zhaoxin94/awsome-domain-adaptation](https://github.com/zhaoxin94/awsome-domain-adaptation)
 
 ## Models

@@ -4,21 +4,23 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 # Detection
 
-## Survey Papers
+## Survey Papers / Repos
 
 * Object Detection with Deep Learning: A Review [\[1807.05511\]](https://arxiv.org/abs/1807.05511)
 * Deep Learning for Generic Object Detection: A Survey [\[1809.02165\]](https://arxiv.org/abs/1809.02165)
 * Object Detection in 20 Years: A Survey [\[1905.05055\]](https://arxiv.org/abs/1905.05055)
+* [hoya012/deep\_learning\_object\_detection](https://github.com/hoya012/deep_learning_object_detection)
+* [amusi/awesome-object-detection](https://github.com/amusi/awesome-object-detection)
 
 ## Resources
 
-* [hoya012/deep\_learning\_object\_detection](https://github.com/hoya012/deep_learning_object_detection)
-* [amusi/awesome-object-detection](https://github.com/amusi/awesome-object-detection)
 * [torchvision - object detection](https://pytorch.org/docs/stable/torchvision/models.html#object-detection-instance-segmentation-and-person-keypoint-detection): official pytorch toolkit for vision
 * [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection): a marvellous open sourced lib with nearly all SOTA models
 * [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2): detectron implemented in pytorch by Facebook
 * [TuSimple/simpledet](https://github.com/TuSimple/simpledet): detection lib by TuSimple
-* Unused now: [facebookresearch/Detectron](https://github.com/facebookresearch/Detectron), [facebookresearch/maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
+* hardly used now \(2019.11\)
+  * [facebookresearch/Detectron](https://github.com/facebookresearch/Detectron)
+  * [facebookresearch/maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
 
 ## Models
 
