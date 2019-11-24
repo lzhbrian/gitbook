@@ -31,8 +31,10 @@ description: image classification and convolutional neural networks
 * LeNet
 * AlexNet
 * VGG [\[1409.1556\]](https://arxiv.org/abs/1409.1556)
+* GoogLeNet \(Inception v1\) [\[1409.4842\]](https://arxiv.org/abs/1409.4842)
+* Inception v2, Inception v3 [\[1512.005677\]](https://arxiv.org/abs/1512.00567)
 * ResNet [\[1512.03385\]](https://arxiv.org/abs/1512.03385)
-* Inception
+* Inception v4, Inception ResNet [\[1602.07261\]](https://arxiv.org/abs/1602.07261)
 * SqueezeNet [\[1602.07360\]](https://arxiv.org/abs/1602.07360)
 * WideResNet [\[1605.07146\]](https://arxiv.org/abs/1605.07146)
 * DenseNet [\[1608.06993\]](https://arxiv.org/abs/1608.06993)

@@ -30,14 +30,20 @@ description: some general deep learning techniques
 * Momentum
 * AdaGrad
 * Adam [\[1412.6980\]](https://arxiv.org/abs/1412.6980)
+* AdamW [\[1711.05101\]](https://arxiv.org/abs/1711.05101)
+* AdaBound [\[1902.09843\]](https://arxiv.org/abs/1902.09843)
+* AMSGrad [\[1904.09237\]](https://arxiv.org/abs/1904.09237)
 * RAdam [\[LiyuanLucasLiu/RAdam\]](https://github.com/LiyuanLucasLiu/RAdam) [\[1908.03265\]](https://arxiv.org/abs/1908.03265)
 
 ### Normalization
 
-* Batch Normalization
-* Instance Normalization
-* Group Normalization
-* Spectral Normalization
+* Batch Normalization [\[1502.03167\]](https://arxiv.org/abs/1502.03167)
+* Weight Normalization [\[1602.07868\]](https://arxiv.org/abs/1602.07868)
+* Layer Normalization [\[1607.06450\]](https://arxiv.org/abs/1607.06450)
+* Instance Normalization [\[1607.08022\]](https://arxiv.org/abs/1607.08022)
+* Spectral Normalization [\[1802.05957\]](https://arxiv.org/abs/1802.05957)
+* Group Normalization [\[1803.08494\]](https://arxiv.org/abs/1803.08494)
+* Switchable Normalization [\[1806.10779\]](https://arxiv.org/abs/1806.10779)
 
 ### Weight Initialization
 
