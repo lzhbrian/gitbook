@@ -27,7 +27,7 @@ description: sementic segmentation
 * DeepLab v3+ [\[1802.02611\]](https://arxiv.org/abs/1802.02611)
 * HRNet [\[1908.07919\]](https://arxiv.org/abs/1908.07919)
 
-## Other
+## Others
 
 ### Dataset
 
