@@ -18,10 +18,14 @@ description: sementic segmentation
 
 ## Models
 
-* FCN
-* Unet
-* PSPNet
-* DeepLab
+* FCN [\[1411.4038\]](https://arxiv.org/abs/1411.4038)
+* DeepLab v1 [\[1412.7062\]](https://arxiv.org/abs/1412.7062)
+* Unet [\[1505.04597\]](https://arxiv.org/abs/1505.04597)
+* DeepLab v2 [\[1606.00915\]](https://arxiv.org/abs/1606.00915)
+* PSPNet [\[1612.01105\]](https://arxiv.org/abs/1612.01105)
+* DeepLab v3 [\[1706.05587\]](https://arxiv.org/abs/1706.05587)
+* DeepLab v3+ [\[1802.02611\]](https://arxiv.org/abs/1802.02611)
+* HRNet [\[1908.07919\]](https://arxiv.org/abs/1908.07919)
 
 ## Other
 

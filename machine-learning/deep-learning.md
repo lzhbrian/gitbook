@@ -7,6 +7,7 @@ description: some general deep learning techniques
 ## Survey Papers / Books
 
 * Deep Learning Book [\[deeplearningbook.org\]](https://www.deeplearningbook.org/)
+* Deep learning [\[Nature\]](https://www.nature.com/articles/nature14539)
 
 ## Resources
 
@@ -51,12 +52,12 @@ description: some general deep learning techniques
 
 ### Weight Initialization
 
-* Kaming init
+* Xavier Initialization [\[JMLR'10\]](http://jmlr.org/proceedings/papers/v9/glorot10a/glorot10a.pdf)
+* He Initialization [\[1502.01852\]](https://arxiv.org/abs/1502.01852)
 
 ### Activation Function
 
 * Sigmoid
-  * $$f(x) = \frac{1}{1+e^{-x}}$$
 * Tanh
 * ReLU
 * Leaky ReLU

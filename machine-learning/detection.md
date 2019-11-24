@@ -1,5 +1,5 @@
 ---
-description: 'detection (including semantic, panoptic segmentation)'
+description: 'detection, shall including semantic, panoptic segmentation)'
 ---
 
 # Detection
@@ -32,6 +32,7 @@ description: 'detection (including semantic, panoptic segmentation)'
 * Mask RCNN [\[1703.06870\]](https://arxiv.org/abs/1703.06870)
 * Cascade RCNN [\[1712.00726\]](https://arxiv.org/abs/1712.00726)
 * Hybrid Task Cascade [\[1901.07518\]](https://arxiv.org/abs/1901.07518)
+* HRNet [\[1908.07919\]](https://arxiv.org/abs/1908.07919)
 
 ### One Stage
 
@@ -46,12 +47,7 @@ description: 'detection (including semantic, panoptic segmentation)'
 
 ## Others
 
-### Training
-
 * Online Hard Example Mining \(OHEM\)
-
-### Metrics
-
 * Mean Average Precision \(mAP\)
 
 ### Datasets

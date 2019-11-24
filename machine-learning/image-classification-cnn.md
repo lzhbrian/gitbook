@@ -11,6 +11,7 @@ description: image classification and convolutional neural networks
 
 ## Resources
 
+* [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
 * [torchvision](https://pytorch.org/docs/stable/torchvision/index.html): official pytorch toolkit for vision
 * [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch): lots of pretrained models in pytorch
 * [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations): lots of augmentation implementations
@@ -39,11 +40,12 @@ description: image classification and convolutional neural networks
 * WideResNet [\[1605.07146\]](https://arxiv.org/abs/1605.07146)
 * DenseNet [\[1608.06993\]](https://arxiv.org/abs/1608.06993)
 * ResNeXt [\[1611.05431\]](https://arxiv.org/abs/1611.05431)
-* MobileNet [\[1704.04861](https://arxiv.org/abs/1704.04861)
+* MobileNet [\[1704.04861\]](https://arxiv.org/abs/1704.04861)
 * NASNet [\[1707.07012\]](https://arxiv.org/abs/1707.07012)
 * SE-ResNet [\[1709.01507\]](https://arxiv.org/abs/1709.01507)
 * Res2Net [\[1904.01169\]](https://arxiv.org/abs/1904.01169)
 * EfficientNet [\[1905.11946\]](https://arxiv.org/abs/1905.11946)
+* HRNet [\[1908.07919\]](https://arxiv.org/abs/1908.07919)
 
 ### Loss
 
@@ -52,14 +54,21 @@ description: image classification and convolutional neural networks
 
 ### Augmentation
 
-* Conventional
-  * Random Crop, ...
+* Conventional: Random Crop, ...
 * Cutout [\[1708.04552\]](https://arxiv.org/abs/1708.04552)
 * AutoAugment [\[1805.09501\]](https://arxiv.org/abs/1805.09501)
 * Fast AutoAugment [\[1905.00397\]](https://arxiv.org/abs/1905.00397)
 * RandAugment [\[1909.13719\]](https://arxiv.org/abs/1909.13719)
 
 ## Others
+
+### Dataset
+
+* [MNIST](http://yann.lecun.com/exdb/mnist/)
+* [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)
+* [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
+* [ImageNet](http://www.image-net.org/)
+* [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html)
 
 ### Tricks
 
