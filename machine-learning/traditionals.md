@@ -6,6 +6,7 @@ description: some traditional machine learning algorithms
 
 ## Survey Papers / Repos
 
+* Top 10 algorithms in data mining. [\[ICDM'06\]](http://39.104.72.142:802/algorithms/10Algorithms-08.pdf)
 * [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
 
 ## Resources
