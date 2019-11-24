@@ -9,7 +9,6 @@ description: 'detection (including semantic, panoptic segmentation)'
 * Object Detection with Deep Learning: A Review [\[1807.05511\]](https://arxiv.org/abs/1807.05511)
 * Deep Learning for Generic Object Detection: A Survey [\[1809.02165\]](https://arxiv.org/abs/1809.02165)
 * Object Detection in 20 Years: A Survey [\[1905.05055\]](https://arxiv.org/abs/1905.05055)
-* A Survey of Deep Learning-Based Object Detection [\[1907.09408\]](https://arxiv.org/abs/1907.09408)
 
 ## Resources
 
@@ -19,6 +18,7 @@ description: 'detection (including semantic, panoptic segmentation)'
 * [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection): a marvellous open sourced lib with nearly all SOTA models
 * [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2): detectron implemented in pytorch by Facebook
 * [TuSimple/simpledet](https://github.com/TuSimple/simpledet): detection lib by TuSimple
+* Unused now: [facebookresearch/Detectron](https://github.com/facebookresearch/Detectron), [facebookresearch/maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
 
 ## Models
 
