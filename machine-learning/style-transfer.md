@@ -10,7 +10,8 @@
 
 ### Neural Style Transfer
 
-* AdaIN
+* Neural Style [\[1508.06576\]](https://arxiv.org/abs/1508.06576)
+* AdaIN [\[1703.06868\]](https://arxiv.org/abs/1703.06868)
 * Perceptual Loss
 * Total Variation Loss
 * Gram Matrix Loss
@@ -19,6 +20,8 @@
 
 * Pix2pix [\[1611.07004\]](https://arxiv.org/abs/1611.07004)
 * CycleGAN [\[1703.10593\]](https://arxiv.org/abs/1703.10593)
+* StarGAN [\[1711.09020\]](https://arxiv.org/abs/1711.09020)
+* SPADE [\[1903.07291\]](https://arxiv.org/abs/1903.07291)
 * FUNIT [\[1905.01723\]](https://arxiv.org/abs/1905.01723)
 
 
