@@ -1,5 +1,5 @@
 ---
-description: 'detection, shall including semantic, panoptic segmentation)'
+description: 'detection (shall including semantic, panoptic segmentation)'
 ---
 
 # Detection
