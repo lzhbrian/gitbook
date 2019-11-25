@@ -11,6 +11,7 @@
 * [Semantic Segmentation](machine-learning/semantic-segmentation.md)
 * [Generative Adversarial Networks](machine-learning/generative-adversarial-networks.md)
 * [Style Transfer](machine-learning/style-transfer.md)
+* [Recommender Systems](machine-learning/recommender-systems.md)
 
 ## Data Structure & Algorithms
 
