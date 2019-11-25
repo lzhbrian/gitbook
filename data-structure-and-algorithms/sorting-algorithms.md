@@ -13,6 +13,17 @@ def bubble_sort(a):
 
 ### Selection Sort
 
+```python
+def selection_sort(a):
+    length = len(a)
+    for i in range(length):
+        min_idx = i
+        for j in range(i, length):
+            if a[j] < a[min_idx]:
+                min_idx = j
+        a[min_idx], a[i] = a[i], a[min_idx]
+```
+
 ### Insertion Sort
 
 ```python
@@ -28,6 +39,10 @@ def insertion_sort(a):
 ```
 
 ### Merge Sort
+
+```python
+
+```
 
 ### Quick Sort
 
@@ -50,6 +65,10 @@ def partition(a, l, r):
 ```
 
 ### Heap Sort
+
+```python
+
+```
 
 
 
