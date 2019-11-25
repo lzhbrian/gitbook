@@ -23,13 +23,16 @@ description: GANs (mainly in image synthesis)
 ### Loss functions
 
 * Vanilla GAN [\[1406.2661\]](https://arxiv.org/abs/1406.2661)
+* EBGAN [\[1609.03126\]](https://arxiv.org/abs/1609.03126)
 * LSGAN [\[1611.04076\]](https://arxiv.org/abs/1611.04076)
 * WGAN [\[1701.07875\]](https://arxiv.org/abs/1701.07875)
-* Hinge Loss
+* BEGAN [\[1703.10717\]](https://arxiv.org/abs/1703.10717)
+* Hinge Loss [\[1705.02894\]](https://arxiv.org/abs/1705.02894)
 
 ### Regularization
 
 * Gradient Penalty [\[1704.00028\]](https://arxiv.org/abs/1704.00028)
+* DRAGAN [\[1705.07215\]](https://arxiv.org/abs/1705.07215)
 * Consistency Regularization [\[1910.12027\]](https://arxiv.org/abs/1910.12027)
 
 ### Architecture
