@@ -2,9 +2,30 @@
 
 ### Bubble Sort
 
+```python
+def bubble_sort(a):
+    length = len(a)
+    for i in range(0, length):
+        for j in range(0, i):
+            if a[i] < a[j]:
+                a[i], a[j] = a[j], a[i]
+```
+
 ### Selection Sort
 
 ### Insertion Sort
+
+```python
+def insertion_sort(a):
+    length = len(a)
+    for i in range(1, length):
+        key = a[i]
+        j = i - 1
+        while a[j] > key and j >= 0:
+            j -= 1
+            a[j + 1] = a[j]
+        a[j] = key
+```
 
 ### Merge Sort
 
@@ -24,7 +45,7 @@ def partition(a, l, r):
         if a[j] < pivot:
             i += 1
             a[j], a[i] = a[i], a[j]
-    a[i + 1], a[r] = a[r], a[i+1]
+    a[i + 1], a[r] = a[r], a[i + 1]
     return i + 1
 ```
 
