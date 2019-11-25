@@ -33,9 +33,9 @@ def insertion_sort(a):
         key = a[i]
         j = i - 1
         while a[j] > key and j >= 0:
-            j -= 1
             a[j + 1] = a[j]
-        a[j] = key
+            j -= 1
+        a[j + 1] = key
 ```
 
 ### Merge Sort
