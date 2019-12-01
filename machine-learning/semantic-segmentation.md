@@ -27,6 +27,12 @@ description: sementic segmentation
 * DeepLab v3+ [\[1802.02611\]](https://arxiv.org/abs/1802.02611)
 * HRNet [\[1908.07919\]](https://arxiv.org/abs/1908.07919)
 
+### Using GANs
+
+* Semantic Segmentation using Adversarial Networks [\[1611.08408\]](https://arxiv.org/abs/1611.08408)
+* SegAN: Adversarial Network with Multi-scale L1 Loss for Medical Image Segmentation [\[1706.01805\]](https://arxiv.org/abs/1706.01805)
+* SegGAN: Semantic Segmentation with Generative Adversarial Network [\[BigMM 2018\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8499105)
+
 ## Others
 
 ### Dataset

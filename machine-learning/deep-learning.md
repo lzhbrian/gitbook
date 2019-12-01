@@ -64,3 +64,9 @@ description: some general deep learning techniques
 * Swish [\[1710.05941\]](https://arxiv.org/abs/1710.05941)
 * Mish [\[digantamisra98/Mish\]](https://github.com/digantamisra98/Mish) [\[1908.08681\]](https://arxiv.org/abs/1908.08681)
 
+### Layers
+
+* Softmax
+* Soft argmax
+* Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
+
