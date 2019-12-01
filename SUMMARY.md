@@ -13,6 +13,10 @@
 * [Style Transfer](machine-learning/style-transfer.md)
 * [Recommender Systems](machine-learning/recommender-systems.md)
 
+## Notes
+
+* [Differientiable Softmax Variants](notes/differientiable-softmax-variants.md)
+
 ## Data Structure & Algorithms
 
 * [Sorting Algorithms](data-structure-and-algorithms/sorting-algorithms.md)
