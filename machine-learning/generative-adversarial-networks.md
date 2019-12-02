@@ -54,11 +54,10 @@ description: GANs (mainly in image synthesis)
 ### Tricks
 
 * Two time-scale update rule \(TTUR\) [\[bioinf-jku/TTUR\]](https://github.com/bioinf-jku/TTUR) [\[1706.08500\]](https://arxiv.org/abs/1706.08500)
+* Self-Supervised GANs via Auxiliary Rotation Loss \(SS-GAN\) [\[1811.11212\]](https://arxiv.org/abs/1811.11212)
 
 ### Metrics
 
 * Inception Score [\[1606.03498\]](https://arxiv.org/abs/1606.03498) [\[1801.01973\]](https://arxiv.org/abs/1801.01973)
 * FID Score [\[1706.08500\]](https://arxiv.org/abs/1706.08500)
-
-
 
