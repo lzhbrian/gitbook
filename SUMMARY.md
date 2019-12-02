@@ -16,6 +16,7 @@
 ## Notes
 
 * [Differientiable Softmax Variants](notes/differientiable-softmax-variants.md)
+* [3D Virtual Try-On](notes/3d-virtual-try-on.md)
 
 ## Data Structure & Algorithms
 
