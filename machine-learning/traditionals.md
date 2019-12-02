@@ -41,7 +41,8 @@ description: some traditional machine learning algorithms
 * Clustering
   * K-means
   * Mean-shift
-* PCA
+  * DBSCAN
+* Principal Component Analysis \(PCA\)
 
 ## Others
 
