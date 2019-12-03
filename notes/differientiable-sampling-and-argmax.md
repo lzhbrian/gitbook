@@ -42,7 +42,7 @@ where $$\tau \in (0, \infty)$$ is a temparature hyperparameter.
 
 We note that the output of Gumbel Softmax function here is a vector which sum to 1, which somewhat looks like a one-hot vector \(but it's not\). So by far, this does not actually replace the $$\arg \max$$ function.
 
-To actually get a pure one-hot vector, we need to use a Straight-Through \(ST\) Gumbel Estimator. Let's directly see an [implementation of Gumbel Softmax in PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax) \(We use the hard mode, soft mode does not get a one-hot vector\).
+To actually get a pure one-hot vector, we need to use a **Straight-Through \(ST\) Gumbel Estimator**. Let's directly see an [implementation of Gumbel Softmax in PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax) \(We use the hard mode, soft mode does not get a one-hot vector\).
 
 ```python
 def gumbel_softmax(logits, tau=1, hard=False, eps=1e-10, dim=-1):
@@ -104,7 +104,7 @@ def gumbel_softmax(logits, tau=1, hard=False, eps=1e-10, dim=-1):
     return ret
 ```
 
-When fowarding, the code use an $$\arg \max$$ to get an actual one-hot vector. And it use `ret = y_hard - y_soft.detach() + y_soft`, `y_hard` has no grad, and by minusing `y_soft.detach()` and adding `y_soft`, it achieves a grad from `y_soft` without modifying the forwarding value.
+When fowarding, the code use an $$\arg \max$$ to get an actual one-hot vector. And it uses `ret = y_hard - y_soft.detach() + y_soft`, `y_hard` has no grad, and by minusing `y_soft.detach()` and adding `y_soft`, it achieves a grad from `y_soft` without modifying the forwarding value.
 
 So eventually, we are able to get a pure one-hot vector in forward pass, and a grad when back propagating, which **makes the sampling procedure differientiable**.
 
@@ -116,9 +116,9 @@ Finally, let's look at how $$\tau$$affects the sampling procedure. The below ima
 
 ## Soft Argmax
 
-So how to make $$\arg \max$$ differentiable? 
+So how to make $$\arg \max$$ differentiable?
 
-Some have introduced the soft $$\arg \max$$ function. It doesn't actually makes it differentiable, but use a continuous function to approximate the $$\arg \max$$ procedure.
+Some have introduced the soft $$\arg \max$$ function. It doesn't actually makes it differentiable, but use a continuous function to approximate the softmax +$$\arg \max$$ procedure.
 
 $$
 \mathbf{\pi} = soft argmax(\mathbf{o}) = \frac{e^{\mathbf{\beta o}}}{\sum_{j} e^{\beta o_j}}
@@ -126,9 +126,12 @@ $$
 
 where $$\beta$$ can be a large value to make $$\mathbf{\pi}$$ very much "look like" a one-hot vector.
 
-Straight-Through Trick maybe is also applicable to soft $$\arg \max$$ \(not sure, need more investigation\).
+{% hint style="info" %}
+Intuitively, **Straight-Through Trick** is also applicable to$$\arg \max$$with softmax \(or with softargmax\)  
+\(still not sure, needs more investigation\).
+{% endhint %}
 
-
+\*\*\*\*
 
 ## Reference
 
