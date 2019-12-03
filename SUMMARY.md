@@ -15,7 +15,7 @@
 
 ## Notes
 
-* [Differientiable Softmax Variants](notes/differientiable-softmax-variants.md)
+* [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
 * [3D Virtual Try-On](notes/3d-virtual-try-on.md)
 * [OpenGL](notes/opengl.md)
 * [Generative Art](notes/generative-art.md)
