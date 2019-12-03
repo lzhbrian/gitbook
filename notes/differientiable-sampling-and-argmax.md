@@ -8,15 +8,13 @@ $$
 \mathbf{\pi} = softmax(\mathbf{o}) = \frac{e^{\mathbf{o}}}{\sum_{j} e^{o_j}},\\o_j \in (-\infty, +\infty)
 $$
 
-After softmax, we usually **sample** from this categorical distribution, or taking an $$\arg \max$$ ****function to select the index. However, one can notice that neither the sample nor the $$\arg \max$$ is **differientiable**.
+After softmax, we usually **sample** from this categorical distribution, or taking an $$\arg \max$$ ****function to select the index. However, one can notice that neither the **sampling** nor the $$\arg \max$$ is **differientiable**.
 
 Researchers have proposed several works to make this possible.
 
 ## Gumbel Max and Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
 
-I will introduct Gumbel Softmax, which have made the sampling procedure differentiable.
-
-
+I will introduct Gumbel Softmax, which have made the **sampling** procedure differentiable.
 
 #### Gumbel Max
 
@@ -110,11 +108,25 @@ When fowarding, the code use an $$\arg \max$$ to get an actual one-hot vector. A
 
 So eventually, we are able to get a pure one-hot vector in forward pass, and a grad when back propagating, which **makes the sampling procedure differientiable**.
 
-Finally, let's look at how $$\tau$$affects the sampling procedure.
+Finally, let's look at how $$\tau$$affects the sampling procedure. The below image shows the sampling distribution \(which is also called the Concrete Distribution [\[1611.00712\]](https://arxiv.org/abs/1611.00712)\) when using different hyperparameter $$\tau$$.
 
-![sampling distribution \(which is also called the concrete distribution\) when using different hyperparameter $$\tau$$](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 
+
+## Soft Argmax
+
+So how to make $$\arg \max$$ differentiable? 
+
+Some have introduced the soft $$\arg \max$$ function. It doesn't actually makes it differentiable, but use a continuous function to approximate the $$\arg \max$$ procedure.
+
+$$
+\mathbf{\pi} = soft argmax(\mathbf{o}) = \frac{e^{\mathbf{\beta o}}}{\sum_{j} e^{\beta o_j}}
+$$
+
+where $$\beta$$ can be a large value to make $$\mathbf{\pi}$$ very much "look like" a one-hot vector.
+
+Straight-Through Trick maybe is also applicable to soft $$\arg \max$$ \(not sure, need more investigation\).
 
 
 
