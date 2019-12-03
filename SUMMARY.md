@@ -18,6 +18,7 @@
 * [Differientiable Softmax Variants](notes/differientiable-softmax-variants.md)
 * [3D Virtual Try-On](notes/3d-virtual-try-on.md)
 * [OpenGL](notes/opengl.md)
+* [Generative Art](notes/generative-art.md)
 
 ## Data Structure & Algorithms
 
