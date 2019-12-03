@@ -137,14 +137,14 @@ Finally, let's look at how $$\tau$$affects the sampling procedure. The below ima
 How to make argmax differentiable?
 
 {% hint style="info" %}
-Intuitively, the **Straight-Through Trick** is also applicable to argmax with softmax \(or with softargmax\)  
+Intuitively, the **Straight-Through Trick** is also applicable for softmax+argmax \(or softargmax + argmax\).  
 I am still not sure, needs more digging in the literature.
 {% endhint %}
 
-Some have introduced the soft argmax function. It doesn't actually makes it differentiable, but use a continuous function to approximate the softmax + argmax procedure.
+Some have introduced the soft-argmax function. It doesn't actually makes it differentiable, but use a continuous function to approximate the softmax+argmax procedure.
 
 $$
-\mathbf{\pi} = \text{softargmax}(\mathbf{o}) = \frac{e^{\mathbf{\beta o}}}{\sum_{j} e^{\beta o_j}}
+\mathbf{\pi} = \text{soft-argmax}(\mathbf{o}) = \frac{e^{\mathbf{\beta o}}}{\sum_{j} e^{\beta o_j}}
 $$
 
 where $$\beta$$ can be a large value to make $$\mathbf{\pi}$$ very much "look like" a one-hot vector.
