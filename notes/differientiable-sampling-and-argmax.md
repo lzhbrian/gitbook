@@ -8,9 +8,11 @@ $$
 \mathbf{\pi} = \text{softmax}(\mathbf{o}) = \frac{e^{\mathbf{o}}}{\sum_{j} e^{o_j}},\\o_j \in (-\infty, +\infty)
 $$
 
-After softmax, we usually **sample** from this categorical distribution, or taking an argmax ****function to select the index. However, one can notice that neither the **sampling** nor the **argmax** is **differientiable**.
+Say $$\mathbf{o}$$ is the output of a neural network before softmax, we call $$\mathbf{o}$$ the **unnormalized log probability.**
 
-Researchers have proposed several works to make this possible.
+After softmax, we usually **sample** from this categorical distribution, or taking an **argmax** function to select the index. However, one can notice that neither the **sampling** nor the **argmax** is **differientiable**.
+
+Researchers have proposed several works to make this possible. I am going to discuss them here.
 
 ## Sampling
 
@@ -23,7 +25,7 @@ First, we need to introduce **Gumbel Max**. In short, Gumbel Max is a trick to u
 Say we want to sample from a categorical distribution $$\mathbf{\pi}$$.  
 The usual way of doing this is using $$\pi$$ to separate $$[0, 1]$$ into intervals, sampling from a uniform distribution $$\text{U} \sim[0, 1]$$, and see where it locates.
 
-The Gumbel Max trick provides an alternative way of doing this.
+The Gumbel Max trick provides an alternative way of doing this. It use **Reparameterization Trick** to avoid the stochastic node during backpropagation.
 
 $$
 y = \arg \max_{i} (o_i +g_i)
