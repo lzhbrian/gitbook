@@ -38,7 +38,9 @@ $$
 
 where $$\tau \in (0, \infty)$$ is a temparature hyperparameter.
 
-We note that the output of Gumbel Softmax function here is a vector which sum to 1, which somewhat looks like a one-hot vector. So by far, this does not actually replace the $$\arg \max$$ function.
+![sampling distribution when using different $$\tau$$](../.gitbook/assets/image.png)
+
+We note that the output of Gumbel Softmax function here is a vector which sum to 1, which somewhat looks like a one-hot vector \(but it's not\). So by far, this does not actually replace the $$\arg \max$$ function.
 
 Let's see an [implementation of PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax):
 
@@ -122,7 +124,7 @@ In terms of argmax \(directly taking the index of highest probability instead of
 * Soft argmax [\[NIPSW 2016\]](https://zhegan27.github.io/Papers/textGAN_nips2016_workshop.pdf)
 * Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
 
-Other blogs
+Other blogs:
 
 * [https://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/](https://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/)
 
