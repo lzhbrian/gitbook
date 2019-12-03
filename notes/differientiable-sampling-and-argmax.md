@@ -38,11 +38,9 @@ $$
 
 where $$\tau \in (0, \infty)$$ is a temparature hyperparameter.
 
-![sampling distribution when using different $$\tau$$](../.gitbook/assets/image.png)
-
 We note that the output of Gumbel Softmax function here is a vector which sum to 1, which somewhat looks like a one-hot vector \(but it's not\). So by far, this does not actually replace the $$\arg \max$$ function.
 
-Let's see an [implementation of PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax):
+Now, let's see an [implementation of Gumbel Softmax in PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax):
 
 ```python
 def gumbel_softmax(logits, tau=1, hard=False, eps=1e-10, dim=-1):
@@ -108,7 +106,15 @@ We use the hard mode, soft mode does not get a one-hot vector.
 
 When fowarding, the code use an argmax to get an actual one-hot vector. And it use `ret = y_hard - y_soft.detach() + y_soft`, `y_hard` has no grad, and by minusing `y_soft.detach()` and adding `y_soft`, it achieves a grad from `y_soft` without modifying the forwarding value.
 
-So finally, we are able to get a pure one-hot vector in forward pass, and a grad when back propagating, which **makes the sampling procedure differientiable**.
+So eventually, we are able to get a pure one-hot vector in forward pass, and a grad when back propagating, which **makes the sampling procedure differientiable**.
+
+Finally, let's look at how $$\tau$$affects the sampling procedure.
+
+![sampling distribution \(which is also called the concrete distribution\) when using different hyperparameter $$\tau$$](../.gitbook/assets/image.png)
+
+
+
+
 
 ## Soft Argmax
 
@@ -123,6 +129,7 @@ In terms of argmax \(directly taking the index of highest probability instead of
 * Softmax
 * Soft argmax [\[NIPSW 2016\]](https://zhegan27.github.io/Papers/textGAN_nips2016_workshop.pdf)
 * Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
+* Concrete Distribution \(Gumbel Softmax Distribution\) [\[1611.00712\]](https://arxiv.org/abs/1611.00712)
 
 Other blogs:
 
