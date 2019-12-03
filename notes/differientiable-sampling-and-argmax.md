@@ -1,4 +1,4 @@
-# Differientiable Sampling
+# Differientiable Sampling and Argmax
 
 ## Introduction
 
@@ -12,9 +12,9 @@ After softmax, we usually **sample** from this categorical distribution, or taki
 
 Researchers have proposed several works to make this possible.
 
-## Gumbel Max and Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
+## Sampling
 
-I will introduct Gumbel Softmax, which have made the **sampling** procedure differentiable.
+I will introduct Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144), which have made the **sampling** procedure differentiable.
 
 #### Gumbel Max
 
@@ -114,9 +114,14 @@ Finally, let's look at how $$\tau$$affects the sampling procedure. The below ima
 
 
 
-## Soft Argmax
+## Argmax
 
 So how to make $$\arg \max$$ differentiable?
+
+{% hint style="info" %}
+Intuitively, the **Straight-Through Trick** is also applicable to$$\arg \max$$with softmax \(or with softargmax\)  
+\(I am still not sure, needs more digging in the literature\).
+{% endhint %}
 
 Some have introduced the soft $$\arg \max$$ function. It doesn't actually makes it differentiable, but use a continuous function to approximate the softmax +$$\arg \max$$ procedure.
 
@@ -126,12 +131,7 @@ $$
 
 where $$\beta$$ can be a large value to make $$\mathbf{\pi}$$ very much "look like" a one-hot vector.
 
-{% hint style="info" %}
-Intuitively, **Straight-Through Trick** is also applicable to$$\arg \max$$with softmax \(or with softargmax\)  
-\(still not sure, needs more investigation\).
-{% endhint %}
 
-\*\*\*\*
 
 ## Reference
 
