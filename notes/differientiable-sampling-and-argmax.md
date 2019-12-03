@@ -1,4 +1,4 @@
-# Differientiable Sampling and Argmax
+# Differientiable Sampling
 
 ## Introduction
 
@@ -13,6 +13,10 @@ After softmax, we usually **sample** from this categorical distribution, or taki
 Researchers have proposed several works to make this possible.
 
 ## Gumbel Max and Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
+
+I will introduct Gumbel Softmax, which have made the sampling procedure differentiable.
+
+
 
 #### Gumbel Max
 
@@ -114,18 +118,9 @@ Finally, let's look at how $$\tau$$affects the sampling procedure.
 
 
 
-## Soft Argmax [\[NIPSW 2016\]](https://zhegan27.github.io/Papers/textGAN_nips2016_workshop.pdf)
-
-In terms of $$\arg \max$$ \(directly taking the index of highest probability instead of sampling\), 
-
-
-
-
-
 ## Reference
 
 * Softmax
-* Soft argmax [\[NIPSW 2016\]](https://zhegan27.github.io/Papers/textGAN_nips2016_workshop.pdf)
 * Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
 * Concrete Distribution \(Gumbel Softmax Distribution\) [\[1611.00712\]](https://arxiv.org/abs/1611.00712)
 
