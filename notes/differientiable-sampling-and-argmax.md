@@ -8,11 +8,11 @@ $$
 \mathbf{\pi} = softmax(\mathbf{o}) = \frac{e^{\mathbf{o}}}{\sum_{j} e^{o_j}},\\o_j \in (-\infty, +\infty)
 $$
 
-After softmax, we usually **sample** from this categorical distribution, or taking an **argmax** function to select the index. However, one can notice that neither the sample nor the argmax is **differientiable**.
+After softmax, we usually **sample** from this categorical distribution, or taking an $$\arg \max$$ ****function to select the index. However, one can notice that neither the sample nor the $$\arg \max$$ is **differientiable**.
 
 Researchers have proposed several works to make this possible.
 
-## Gumbel Max and Gumbel Softmax
+## Gumbel Max and Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
 
 #### Gumbel Max
 
@@ -40,7 +40,7 @@ where $$\tau \in (0, \infty)$$ is a temparature hyperparameter.
 
 We note that the output of Gumbel Softmax function here is a vector which sum to 1, which somewhat looks like a one-hot vector \(but it's not\). So by far, this does not actually replace the $$\arg \max$$ function.
 
-Now, let's see an [implementation of Gumbel Softmax in PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax):
+To actually get a pure one-hot vector, we need to use a Straight-Through \(ST\) Gumbel Estimator. Let's directly see an [implementation of Gumbel Softmax in PyTorch](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax) \(We use the hard mode, soft mode does not get a one-hot vector\).
 
 ```python
 def gumbel_softmax(logits, tau=1, hard=False, eps=1e-10, dim=-1):
@@ -102,9 +102,7 @@ def gumbel_softmax(logits, tau=1, hard=False, eps=1e-10, dim=-1):
     return ret
 ```
 
-We use the hard mode, soft mode does not get a one-hot vector. 
-
-When fowarding, the code use an argmax to get an actual one-hot vector. And it use `ret = y_hard - y_soft.detach() + y_soft`, `y_hard` has no grad, and by minusing `y_soft.detach()` and adding `y_soft`, it achieves a grad from `y_soft` without modifying the forwarding value.
+When fowarding, the code use an $$\arg \max$$ to get an actual one-hot vector. And it use `ret = y_hard - y_soft.detach() + y_soft`, `y_hard` has no grad, and by minusing `y_soft.detach()` and adding `y_soft`, it achieves a grad from `y_soft` without modifying the forwarding value.
 
 So eventually, we are able to get a pure one-hot vector in forward pass, and a grad when back propagating, which **makes the sampling procedure differientiable**.
 
@@ -116,9 +114,9 @@ Finally, let's look at how $$\tau$$affects the sampling procedure.
 
 
 
-## Soft Argmax
+## Soft Argmax [\[NIPSW 2016\]](https://zhegan27.github.io/Papers/textGAN_nips2016_workshop.pdf)
 
-In terms of argmax \(directly taking the index of highest probability instead of sampling\), 
+In terms of $$\arg \max$$ \(directly taking the index of highest probability instead of sampling\), 
 
 
 
