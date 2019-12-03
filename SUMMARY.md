@@ -17,13 +17,9 @@
 
 * [Differientiable Softmax Variants](notes/differientiable-softmax-variants.md)
 * [3D Virtual Try-On](notes/3d-virtual-try-on.md)
+* [OpenGL](notes/opengl.md)
 
 ## Data Structure & Algorithms
 
 * [Sorting Algorithms](data-structure-and-algorithms/sorting-algorithms.md)
-
-## Programming Lang
-
-* [Python](programming-lang/python.md)
-* [C++](programming-lang/c++.md)
 
