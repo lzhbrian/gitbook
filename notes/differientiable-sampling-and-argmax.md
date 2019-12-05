@@ -22,7 +22,7 @@ Researchers have proposed several works to make this possible. I am going to dis
 
 I will introduce Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144), which have made the **sampling** procedure differentiable.
 
-#### Gumbel Max
+### Gumbel Max
 
 First, we need to introduce **Gumbel Max**. In short, Gumbel Max is a trick to use gumbel distribution to sample a categorical distribution.
 
@@ -35,14 +35,28 @@ $$
 y = \arg \max_{i} (o_i +g_i)
 $$
 
-where $$g_i \sim \text{Gumbel}(0, 1)$$, which can be sampled by $$-\log(-\log(\text{Uniform}[0, 1]))$$  
+where $$g_i \sim \text{Gumbel}(0, 1)$$, which can be sampled by 
+
+$$
+-\log(-\log(\text{Uniform}[0, 1]))
+$$
+
 We can prove that $$y$$ is distributed according to $$\mathbf{\pi}$$.
 
 {% hint style="info" %}
-### **Proof**
+### **Prove that**
 
-$$y = \arg \max_{i} (o_i +g_i)$$, where $$g_i \sim \text{Gumbel}(0, 1)$$, which sampled by $$-\log(-\log(\text{Uniform}[0, 1]))$$  
-is distributed with $$\pi_i = \text{softmax}(o_i) = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.
+$$y = \arg \max_{i} (o_i +g_i)$$, where $$g_i \sim \text{Gumbel}(0, 1)$$, which sampled by 
+
+$$
+-\log(-\log(\text{Uniform}[0, 1]))
+$$
+
+is distributed with
+
+$$
+\pi_i = \text{softmax}(o_i) = \frac{e^{o_i}}{\sum_{j} e^{o_j}}
+$$
 
 ### **Prerequisites**
 
@@ -52,27 +66,41 @@ is distributed with $$\pi_i = \text{softmax}(o_i) = \frac{e^{o_i}}{\sum_{j} e^{o
 **Mean:** $$\text{E}(X) = \mu+\gamma\beta, \gamma \approx 0.5772$$is the [Euler–Mascheroni constant](https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant).  
 **Quantile Function:** $$Q(p) = \mu-\beta \log(-\log(p))$$\([Quantile Function](https://en.wikipedia.org/wiki/Quantile_function) is used to sample random variables from a distribution given CDF, it is also called inverse CDF\)
 
-### PF
+### Proof
 
-We actually want to prove that $$\text{Gumbel}(\mu=o_i, \beta=1)$$ is distributed with $$\pi_i = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.  
-$$f(x; \mu, 1) = e^{-(x-\mu) – e^{-(x-\mu)}}.$$  
-$$F(x; \mu, 1) = e^{-e^{-(x-\mu)}}$$.  
-The Probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:  
-$$\Pr(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}_{j=1}^{K}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_{j'})}}$$  
+We actually want to prove that $$\text{Gumbel}(\mu=o_i, \beta=1)$$ is distributed with $$\pi_i = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.
+
+ $$\text{Gumbel}(\mu=o_i, \beta=1)$$ has the following PDF and CDF
+
+$$
+\begin{align}
+f(x; \mu, 1) &= e^{-(x-\mu) – e^{-(x-\mu)}}\\
+F(x; \mu, 1) &= e^{-e^{-(x-\mu)}}
+\end{align}
+$$
+
+.The Probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:
+
+$$
+\Pr(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_{j'})}}
+$$
+
 We know the marginal distribution over $$\pi_i$$ and we need to integrate it out to find the overall probability:
 
 $$
-\begin{align}  \Pr(\text{$i$ is largest}|\{o_{j}\}) &= \int e^{-(\pi_i-o_i)-e^{-(\pi_i-o_i)}} \times \prod_{j\neq i}e^{-e^{-(\pi_i-o_j)}} \mathrm{d}\pi_i  \\&=\int e^{-\pi_i + o_i -e^{-\pi_i} \sum_{j=1}^K e^{x_j}}\mathrm{d}z_k \end{align}
+\begin{align}  
+\Pr(\text{$i$ is largest}|\{o_{j}\}) &= \int e^{-(\pi_i-o_i)-e^{-(\pi_i-o_i)}} \times \prod_{j\neq i}e^{-e^{-(\pi_i-o_j)}} \mathrm{d}\pi_i  \\
+&=\int e^{-\pi_i + o_i -e^{-\pi_i} \sum_{j} e^{o_j}}\mathrm{d}\pi_i \\
+&=\frac{e^{o_i}}{\sum_{j}e^{o_j}}
+\end{align}
 $$
 
-  
-  
-
+which is exactly a softmax probablity. QED.
 
 **Reference:** [**https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/**](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/)\*\*\*\*
 {% endhint %}
 
-#### Gumbel Softmax
+### Gumbel Softmax
 
 Notice that there is still an argmax in Gumbel Max, which still makes it indifferentiable. Therefore, we use a softmax function to approximate this argmax procedure.
 
