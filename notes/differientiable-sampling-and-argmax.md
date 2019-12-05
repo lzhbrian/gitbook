@@ -1,5 +1,5 @@
 ---
-description: 'WIP, last updated: 2019.12.5'
+description: 'WIP, last updated: 2019.12.6'
 ---
 
 # Differientiable Sampling and Argmax
@@ -228,7 +228,9 @@ where $$\beta$$ can be a large value to make $$\mathbf{\pi}$$ very much "look li
 * Gumbel Softmax [\[1611.01144\]](https://arxiv.org/abs/1611.01144)
 * Concrete Distribution \(Gumbel Softmax Distribution\) [\[1611.00712\]](https://arxiv.org/abs/1611.00712)
 * Eric Jang official blog: [https://blog.evjang.com/2016/11/tutorial-categorical-variational.html](https://blog.evjang.com/2016/11/tutorial-categorical-variational.html)
+* PyTorch Implementation of Gumbel Softmax: [https://pytorch.org/docs/stable/nn.functional.html\#torch.nn.functional.gumbel\_softmax](https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax)
 * [https://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/](https://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/)
+* [https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/)
 
 
 
