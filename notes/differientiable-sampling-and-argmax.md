@@ -58,8 +58,15 @@ We actually want to prove that $$\text{Gumbel}(\mu=o_i, \beta=1)$$ is distribute
 $$f(x; \mu, 1) = e^{-(x-\mu) – e^{-(x-\mu)}}.$$  
 $$F(x; \mu, 1) = e^{-e^{-(x-\mu)}}$$.  
 The Probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:  
-$$\text{Pr}(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}_{j=1}^{K}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_{j'})}}$$  
-We know the marginal distribution over $$\pi_i$$ and we need to integrate it out to find the overall probability:  
+$$\Pr(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}_{j=1}^{K}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_{j'})}}$$  
+We know the marginal distribution over $$\pi_i$$ and we need to integrate it out to find the overall probability:
+
+$$
+\begin{align}  \Pr(\text{$i$ is largest}|\{o_{j}\}) &= \int e^{-(\pi_i-o_i)-e^{-(\pi_i-o_i)}} \times \prod_{j\neq i}e^{-e^{-(\pi_i-o_j)}} \mathrm{d}\pi_i  \\&=\int e^{-\pi_i + o_i -e^{-\pi_i} \sum_{j=1}^K e^{x_j}}\mathrm{d}z_k \end{align}
+$$
+
+  
+  
 
 
 **Reference:** [**https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/**](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/)\*\*\*\*
