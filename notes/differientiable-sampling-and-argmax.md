@@ -35,15 +35,34 @@ $$
 y = \arg \max_{i} (o_i +g_i)
 $$
 
-where $$g_i \sim \text{Gumbel}(0, 1) = -\log(-\log(\text{Uniform}[0, 1]))$$.  
+where $$g_i \sim \text{Gumbel}(0, 1)$$, which can be sampled by $$-\log(-\log(\text{Uniform}[0, 1]))$$  
 We can prove that $$y$$ is distributed according to $$\mathbf{\pi}$$.
 
 {% hint style="info" %}
-**Proof** $$y = \arg \max_{i} (o_i +g_i)$$,   
-where $$g_i \sim \text{Gumbel}(0, 1) = -\log(-\log(\text{Uniform}[0, 1]))$$  
-is distributed with $$\mathbf{\pi} = \text{softmax}(\mathbf{o}) = \frac{e^{\mathbf{o}}}{\sum_{j} e^{o_j}}$$
+### **Proof**
 
-**todo**
+$$y = \arg \max_{i} (o_i +g_i)$$, where $$g_i \sim \text{Gumbel}(0, 1)$$, which sampled by $$-\log(-\log(\text{Uniform}[0, 1]))$$  
+is distributed with $$\pi_i = \text{softmax}(o_i) = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.
+
+### **Prerequisites**
+
+**Gumbel Distribution** \(param by location ****$$\mu$$, and scale $$\beta>0$$\) \([wikipedia](https://en.wikipedia.org/wiki/Gumbel_distribution)\)  
+**CDF:** $$F(x; \mu, \beta) = e^{-e^{(x-\mu)/\beta}}$$  
+**PDF:** $$f(x; \mu, \beta) = \frac{1}{\beta} e^{-(z+e^{-z})}, z = \frac{x-\mu}{\beta}$$  
+**Mean:** $$\text{E}(X) = \mu+\gamma\beta, \gamma \approx 0.5772$$is the [Euler–Mascheroni constant](https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant).  
+**Quantile Function:** $$Q(p) = \mu-\beta \log(-\log(p))$$\([Quantile Function](https://en.wikipedia.org/wiki/Quantile_function) is used to sample random variables from a distribution given CDF, it is also called inverse CDF\)
+
+### PF
+
+We actually want to prove that $$\text{Gumbel}(\mu=o_i, \beta=1)$$ is distributed with $$\pi_i = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.  
+$$f(x; \mu, 1) = e^{-(x-\mu) – e^{-(x-\mu)}}.$$  
+$$F(x; \mu, 1) = e^{-e^{-(x-\mu)}}$$.  
+The Probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:  
+$$\text{Pr}(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}_{j=1}^{K}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_{j'})}}$$  
+We know the marginal distribution over $$\pi_i$$ and we need to integrate it out to find the overall probability:  
+
+
+**Reference:** [**https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/**](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/)\*\*\*\*
 {% endhint %}
 
 #### Gumbel Softmax
