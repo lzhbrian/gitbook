@@ -7,6 +7,7 @@ description: GANs (mainly in image synthesis)
 ## Survey Papers / Repos
 
 * Are GANs Created Equal? A Large-Scale Study [\[1711.10337\]](https://arxiv.org/abs/1711.10337)
+* Which Training Methods for GANs do actually Converge? [\[1801.04406\]](https://arxiv.org/abs/1801.04406)
 * A Large-Scale Study on Regularization and Normalization in GANs [\[1807.04720\]](https://arxiv.org/abs/1807.04720)
 * [hindupuravinash/the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo)
 
