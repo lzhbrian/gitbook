@@ -82,7 +82,7 @@ $$
 .The Probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:
 
 $$
-\Pr(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_{j'})}}
+\Pr(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_j)}}
 $$
 
 We know the marginal distribution over $$\pi_i$$ and we need to integrate it out to find the overall probability:
