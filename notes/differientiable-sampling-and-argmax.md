@@ -35,28 +35,15 @@ $$
 y = \arg \max_{i} (o_i +g_i)
 $$
 
-where $$g_i \sim \text{Gumbel}(0, 1)$$, which can be sampled by 
-
-$$
--\log(-\log(\text{Uniform}[0, 1]))
-$$
-
+where $$g_i \sim \text{Gumbel}(0, 1)$$, which can be sampled by $$-\log(-\log(\text{Uniform}[0, 1]))$$.  
 We can prove that $$y$$ is distributed according to $$\mathbf{\pi}$$.
 
 {% hint style="info" %}
 ### **Prove that**
 
-$$y = \arg \max_{i} (o_i +g_i)$$, where $$g_i \sim \text{Gumbel}(0, 1)$$, which sampled by 
-
-$$
--\log(-\log(\text{Uniform}[0, 1]))
-$$
-
-is distributed with
-
-$$
-\pi_i = \text{softmax}(o_i) = \frac{e^{o_i}}{\sum_{j} e^{o_j}}
-$$
+$$y = \arg \max_{i} (o_i +g_i)$$, where $$g_i \sim \text{Gumbel}(0, 1)$$  
+which can be sampled by $$-\log(-\log(\text{Uniform}[0, 1]))$$  
+is distributed with $$\pi = \text{softmax}(o_i) = \frac{e^{o_i}}{\sum{j} e^{o_j}}$$
 
 ### **Prerequisites**
 
@@ -68,27 +55,30 @@ $$
 
 ### Proof
 
-We actually want to prove that $$\text{Gumbel}(\mu=o_i, \beta=1)$$ is distributed with $$\pi_i = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.
+We actually want to prove that $$\text{Gumbel}(\mu=o_i, \beta=1)$$   
+is distributed with $$\pi_i = \frac{e^{o_i}}{\sum_{j} e^{o_j}}$$.
 
- $$\text{Gumbel}(\mu=o_i, \beta=1)$$ has the following PDF and CDF
+We can find that $$\text{Gumbel}(\mu=o_i, \beta=1)$$ has the following PDF and CDF
 
 $$
 \begin{align}
+
 f(x; \mu, 1) &= e^{-(x-\mu) – e^{-(x-\mu)}}\\
 F(x; \mu, 1) &= e^{-e^{-(x-\mu)}}
 \end{align}
 $$
 
-.The Probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:
+.Then, the probability that all other $$\pi_{j \neq i}$$ are less than $$\pi_i$$ is:
 
 $$
 \Pr(\pi_i ~\text{is the largest} | \pi_i, \{o_{j}\}) = \prod_{j \neq i} e^{-e^{-(\pi_i - o_j)}}
 $$
 
-We know the marginal distribution over $$\pi_i$$ and we need to integrate it out to find the overall probability:
+We know the marginal distribution over $$\pi_i$$ and we are able to integrate it out to find the overall probability: \($$p(x) = \int_y p(x,y) dy = \int_y p(x|y) p(y) dy$$\)
 
 $$
-\begin{align}  
+\begin{align} 
+ 
 \Pr(\text{$i$ is largest}|\{o_{j}\}) &= \int e^{-(\pi_i-o_i)-e^{-(\pi_i-o_i)}} \times \prod_{j\neq i}e^{-e^{-(\pi_i-o_j)}} \mathrm{d}\pi_i  \\
 &=\int e^{-\pi_i + o_i -e^{-\pi_i} \sum_{j} e^{o_j}}\mathrm{d}\pi_i \\
 &=\frac{e^{o_i}}{\sum_{j}e^{o_j}}
