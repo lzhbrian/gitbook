@@ -39,7 +39,7 @@ description: 'detection (shall including semantic, panoptic segmentation)'
 * SSD [\[1512.02325\]](https://arxiv.org/abs/1512.02325)
 * YOLOv1 [\[1506.02640\]](https://arxiv.org/abs/1506.02640)
 * YOLOv2 [\[1612.08242\]](https://arxiv.org/abs/1612.08242)
-* RetinaNet [\[1708.02002\]](https://arxiv.org/abs/1708.02002)
+* RetinaNet \(Focal Loss\) [\[1708.02002\]](https://arxiv.org/abs/1708.02002)
 * YOLOv3 [\[1804.02767\]](https://arxiv.org/abs/1804.02767)
 * CornerNet [\[1808.01244\]](https://arxiv.org/abs/1808.01244)
 * CenterNet [\[1904.07850\]](https://arxiv.org/abs/1904.07850)
@@ -50,6 +50,7 @@ description: 'detection (shall including semantic, panoptic segmentation)'
 
 * Online Hard Example Mining \(OHEM\)
 * Mean Average Precision \(mAP\)
+* Empirical Upper-bound in Object Detection and More [\[1911.12451\]](https://arxiv.org/abs/1911.12451)
 
 ### Datasets
 
