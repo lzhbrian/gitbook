@@ -1,3 +1,7 @@
+---
+description: 'WIP, last updated: 2019.12.5'
+---
+
 # Differientiable Sampling and Argmax
 
 ## Introduction
