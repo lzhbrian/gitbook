@@ -54,10 +54,19 @@ description: some traditional machine learning algorithms
 
 ### Metrics
 
-* Precision
-* Recall
+|  | True | False |
+| :--- | :--- | :--- |
+| Predict True | True Positive | False Positive \(Type I Error\) |
+| Predict False | False Negative \(Type II Error\) | True Negative |
+
+* Precision and Recall
+  * $$\text{Precision} = \frac{\text{TP}}{\text{TP} +\text{FP}}$$
+  * $$\text{Recall} = \frac{\text{TP}}{\text{TP}+\text{FN}}$$
 * F1 Score
-* ROC
+  * $$\text{F1 score} = 2 \cdot\frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} +\text{Recall}}$$
+* Receiver Operating Characteristic \(ROC\)
+  * $$\text{TPR} = \frac{\text{TP}}{\text{TP}+\text{FN}}$$
+  * $$\text{FPR} = \frac{\text{FP}}{\text{FP}+\text{TN}}$$
 * AUC
 * Confusion Matrix
 
