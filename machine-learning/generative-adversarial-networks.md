@@ -43,6 +43,7 @@ description: GANs (mainly in image synthesis)
 * BigGAN [\[1809.11096\]](https://arxiv.org/abs/1809.11096)
 * Style based Generator \(StyleGAN\) [\[1812.04948\]](https://arxiv.org/abs/1812.04948)
 * Mapping Network \(StyleGAN\) [\[1812.04948\]](https://arxiv.org/abs/1812.04948)
+* LOGAN: Latent Optimisation for Generative Adversarial Networks [\[1912.00953\]](https://arxiv.org/abs/1912.00953)
 
 ### Conditional GANs
 
