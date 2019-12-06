@@ -31,20 +31,26 @@ y=\frac{1}{1+e^{-(ax+b)}} \\
 L(y,\hat{y}) = -\hat{y}\log y - (1 - \hat{y}) \log (1-y)
 $$
 
+* Naive Bayes
+
+$$
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+$$
+
 * Support Vector Machine \(SVM\)
+
   * Process: Lagrange -&gt; Dual Problem -&gt; SMO
 
-$$
-\min \frac{1}{2} ||w||^2  \\
-\text{s.t.}~y^{(i)}(w^{T}x^{(i)}+b) \geq 1, i=1,...,m
-$$
+  $$
+  \min \frac{1}{2} ||w||^2  \\
+  \text{s.t.}~y^{(i)}(w^{T}x^{(i)}+b) \geq 1, i=1,...,m
+  $$
 
 * K Nearest Neighbor \(kNN\)
-* Decision Tree
-* Random Forest
-* Naive Bayes
 * Expectation-Maximization \(EM\)
 * Linear Discrimant Analysis \(LDA\)
+* Decision Tree
+* Random Forest
 * Gradient Boosting Tree \(GBDT\)
 
 ### Semi-supervised
