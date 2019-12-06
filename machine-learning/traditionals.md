@@ -18,12 +18,27 @@ description: some traditional machine learning algorithms
 ### Supervised
 
 * Linear Regression
-  * $$y=ax+b$$
-  * $$L(y,\hat{y}) = (y-\hat{y})^2$$
+
+$$
+y=ax+b\\
+L(y,\hat{y}) = (y-\hat{y})^2
+$$
+
 * Logistic Regression
-  * $$y=\frac{1}{1+e^{-(ax+b)}}$$
-  * $$L(y,\hat{y}) = -\hat{y}\log y - (1 - \hat{y}) \log (1-y)$$
+
+$$
+y=\frac{1}{1+e^{-(ax+b)}} \\
+L(y,\hat{y}) = -\hat{y}\log y - (1 - \hat{y}) \log (1-y)
+$$
+
 * Support Vector Machine \(SVM\)
+  * Process: Lagrange -&gt; Dual Problem -&gt; SMO
+
+$$
+\min \frac{1}{2} ||w||^2  \\
+\text{s.t.}~y^{(i)}(w^{T}x^{(i)}+b) \geq 1, i=1,...,m
+$$
+
 * K Nearest Neighbor \(kNN\)
 * Decision Tree
 * Random Forest
@@ -43,6 +58,7 @@ description: some traditional machine learning algorithms
   * Mean-shift
   * DBSCAN
 * Principal Component Analysis \(PCA\)
+* Latent Dirichlet allocation \(LDA\) Topic Modeling
 
 ## Others
 
@@ -54,10 +70,10 @@ description: some traditional machine learning algorithms
 
 ### Metrics
 
-|  | True | False |
+|  | True Samples | False Samples |
 | :--- | :--- | :--- |
-| Predict True | True Positive | False Positive \(Type I Error\) |
-| Predict False | False Negative \(Type II Error\) | True Negative |
+| Predict True | True Positive | False Positive \[Type I Error\] |
+| Predict False | False Negative \[Type II Error\] | True Negative |
 
 * Precision and Recall
   * $$\text{Precision} = \frac{\text{TP}}{\text{TP} +\text{FP}}$$
@@ -67,8 +83,12 @@ description: some traditional machine learning algorithms
 * Receiver Operating Characteristic \(ROC\)
   * $$\text{TPR} = \frac{\text{TP}}{\text{TP}+\text{FN}}$$
   * $$\text{FPR} = \frac{\text{FP}}{\text{FP}+\text{TN}}$$
-* AUC
+* Area Under ROC \(AUC\)
 * Confusion Matrix
+
+## Reference
+
+* SVM: [https://www.cnblogs.com/jerrylead/archive/2011/03/13/1982639.html](https://www.cnblogs.com/jerrylead/archive/2011/03/13/1982639.html)
 
 
 
