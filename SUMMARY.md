@@ -16,7 +16,7 @@
 ## Notes
 
 * [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
-* [CNN practical tips](notes/cnn-practical-tips.md)
+* [CNN practical notes](notes/cnn-practical-notes.md)
 * [3D Virtual Try-On](notes/3d-virtual-try-on.md)
 * [OpenGL](notes/opengl.md)
 * [Generative Art](notes/generative-art.md)
