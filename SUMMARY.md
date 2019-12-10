@@ -20,6 +20,7 @@
 * [3D Virtual Try-On](notes/3d-virtual-try-on.md)
 * [OpenGL](notes/opengl.md)
 * [Generative Art](notes/generative-art.md)
+* [nginx usage](notes/nginx-usage.md)
 
 ## Data Structure & Algorithms
 

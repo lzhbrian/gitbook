@@ -6,7 +6,7 @@ description: generative art
 
 What is Generative Art? According to wikipedia \[1\], Generative Art refers to art that in whole or in part has been created with the use of an autonomous system.
 
-Some Github projects about this
+Awesome Github repos about this
 
 * [https://github.com/anaulin/generative-art](https://github.com/anaulin/generative-art)
 * [https://github.com/terkelg/awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding)
