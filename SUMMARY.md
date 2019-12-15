@@ -12,12 +12,13 @@
 * [Generative Adversarial Networks](machine-learning/generative-adversarial-networks.md)
 * [Style Transfer](machine-learning/style-transfer.md)
 * [Recommender Systems](machine-learning/recommender-systems.md)
+* [Meta Learning](machine-learning/meta-learning.md)
 
 ## Notes
 
 * [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
 * [CNN practical notes](notes/cnn-practical-notes.md)
-* [3D Virtual Try-On](notes/3d-virtual-try-on.md)
+* [3D Clothes](notes/3d-clothes.md)
 * [OpenGL](notes/opengl.md)
 * [Generative Art](notes/generative-art.md)
 * [nginx usage](notes/nginx-usage.md)
