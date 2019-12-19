@@ -22,7 +22,7 @@
 * [OpenGL](notes/opengl.md)
 * [Generative Art](notes/generative-art.md)
 * [nginx usage](notes/nginx-usage.md)
-* [Best Practice Deploy Deep Learning Models](notes/best-practice-deploy-deep-learning-models.md)
+* [Deploy Deep Learning Models](notes/deploy-deep-learning-models.md)
 
 ## Data Structure & Algorithms
 
