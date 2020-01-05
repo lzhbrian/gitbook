@@ -39,7 +39,7 @@ $$
 
 * Support Vector Machine \(SVM\)
 
-  * Process: Lagrange -&gt; Dual Problem -&gt; SMO
+  * Training process: Lagrange -&gt; Dual Problem -&gt; SMO
 
   $$
   \min \frac{1}{2} ||w||^2  \\
