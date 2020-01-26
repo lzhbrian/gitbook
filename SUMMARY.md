@@ -17,6 +17,7 @@
 ## Notes
 
 * [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
+* [Disentanglement in GANs](notes/disentanglement-in-gans.md)
 * [CNN practical notes](notes/cnn-practical-notes.md)
 * [3D Clothes](notes/3d-clothes.md)
 * [OpenGL](notes/opengl.md)
