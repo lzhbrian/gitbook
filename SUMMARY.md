@@ -17,6 +17,7 @@
 ## Notes
 
 * [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
+* [Multi-task Learning \(MTL\)](notes/multi-task-learning-mtl.md)
 * [Disentanglement in GANs](notes/disentanglement-in-gans.md)
 * [CNN practical notes](notes/cnn-practical-notes.md)
 * [3D Clothes](notes/3d-clothes.md)
