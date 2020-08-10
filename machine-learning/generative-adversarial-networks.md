@@ -34,6 +34,7 @@ description: GANs (mainly in image synthesis)
 
 * Gradient Penalty [\[1704.00028\]](https://arxiv.org/abs/1704.00028)
 * DRAGAN [\[1705.07215\]](https://arxiv.org/abs/1705.07215)
+* SNGAN [\[1802.05957\]](https://arxiv.org/abs/1802.05957)
 * Consistency Regularization [\[1910.12027\]](https://arxiv.org/abs/1910.12027)
 
 ### Architecture
