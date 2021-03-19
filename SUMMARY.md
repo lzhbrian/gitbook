@@ -16,6 +16,7 @@
 
 ## Notes
 
+* [Character Motion Synthesis](notes/character-motion-synthesis.md)
 * [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
 * [GAN theory](notes/gan-theory.md)
 * [Multi-task Learning \(MTL\)](notes/multi-task-learning-mtl.md)
