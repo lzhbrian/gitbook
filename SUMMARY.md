@@ -27,7 +27,7 @@
 * [Generative Art](notes/generative-art.md)
 * [nginx usage](notes/nginx-usage.md)
 * [Deploy Deep Learning Models](notes/deploy-deep-learning-models.md)
-* [当氪老的感受](notes/dang-ke-lao-de-gan-shou.md)
+* [关于游戏氪金](notes/dang-ke-lao-de-gan-shou.md)
 
 ## Data Structure & Algorithms
 
