@@ -16,7 +16,6 @@
 
 ## Notes
 
-* [Character Motion Synthesis](notes/character-motion-synthesis.md)
 * [Differientiable Sampling and Argmax](notes/differientiable-sampling-and-argmax.md)
 * [GAN theory](notes/gan-theory.md)
 * [Multi-task Learning \(MTL\)](notes/multi-task-learning-mtl.md)
@@ -27,6 +26,7 @@
 * [Generative Art](notes/generative-art.md)
 * [nginx usage](notes/nginx-usage.md)
 * [Deploy Deep Learning Models](notes/deploy-deep-learning-models.md)
+* [Character Motion Synthesis](notes/character-motion-synthesis.md)
 * [关于游戏氪金](notes/dang-ke-lao-de-gan-shou.md)
 
 ## Data Structure & Algorithms
