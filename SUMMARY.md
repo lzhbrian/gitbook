@@ -28,6 +28,7 @@
 * [Deploy Deep Learning Models](notes/deploy-deep-learning-models.md)
 * [Character Motion Synthesis](notes/character-motion-synthesis.md)
 * [关于游戏氪金](notes/dang-ke-lao-de-gan-shou.md)
+* [关于内容平台](notes/guan-yu-nei-rong-ping-tai.md)
 
 ## Data Structure & Algorithms
 
